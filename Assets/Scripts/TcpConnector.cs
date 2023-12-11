@@ -123,7 +123,7 @@ public class TcpConnector : MonoBehaviour
                     // unityChanController.parseMessage(clientMessage);
                     flameController.ParseMessage(clientMessage);
 
-                    // print("Received message: " + clientMessage);
+                    print($"Received message: {clientMessage}");
 
                     // SendData(client);
 

@@ -59,7 +59,7 @@ public class UnityChanController : MonoBehaviour, ISaveable
 
         neck = anim.GetBoneTransform(HumanBodyBones.Neck);
         neck_quat = Quaternion.Euler(0, 90, -90);
-        autoBlinkScript = GetComponent("AutoBlink") as MonoBehaviour;
+        autoBlinkScript = GetComponent("UnityChan.AutoBlink") as MonoBehaviour;
         autoBlinkScript.enabled = isAutoBlinkActive;
         SetEyes(eye_ratio_open);
 

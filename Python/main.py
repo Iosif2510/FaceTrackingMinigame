@@ -196,9 +196,9 @@ def main():
             # roll: +ve when the axis pointing upward
             # pitch: +ve when we look upward
             # yaw: +ve when we look left
-            roll = np.clip(np.degrees(steady_pose[0][1]), -90, 90)
+            roll = np.clip(-np.degrees(steady_pose[0][1]), -90, 90)
             # pitch = np.clip(-(180 + np.degrees(steady_pose[0][0])), -90, 90)
-            pitch = np.clip(np.degrees(steady_pose[0][0]) - 180, -90, 90)
+            pitch = np.clip(np.degrees(steady_pose[0][0]) + 180, -90, 90)
             yaw =  np.clip(-np.degrees(steady_pose[0][2]), -90, 90)
 
             # print("Roll: %.2f, Pitch: %.2f, Yaw: %.2f" % (roll, pitch, yaw))

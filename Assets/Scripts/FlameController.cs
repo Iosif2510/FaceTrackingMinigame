@@ -58,12 +58,6 @@ public class FlameController : MonoBehaviour
         beta = Resources.Load<TextAsset>("beta");
         char[] delimiterChars = {' ', ',', '\t', '\n', '\r'};
         var lines = beta.text.Split(delimiterChars);
-        // foreach (var line in lines)
-        // {
-        //     Debug.Log(line);
-        // }
-        // Debug.Log(lines[0]);
-        // if (float.TryParse(lines[0], out var b)) Debug.Log(b);
 
         var betaList = new List<float>(400);
         int index = 0;
